@@ -1,0 +1,71 @@
+@use 'variable';
+
+.differentials{
+    .differentials-text{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .differentials-img{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 70%;
+        }
+    }
+    .skills{
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        p{
+            display: flex;
+            align-items: center;
+            span{
+                img{
+                    width: 3em;
+                    margin-right: 1em;
+                }
+            }
+        }
+        .color-green{
+            color: variable.$green;
+        }
+        .color-blue{
+            color: variable.$blue;
+        }
+        .color-pink{
+            color: variable.$pink;
+        }
+        .color-orange{
+            color: variable.$orange;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills-children{
+        width: 50%;
+    }
+    .differentials{
+        .differentials-img{
+            img{
+                width: 50%;
+            }
+        }
+         .skills{
+             p{
+                flex-wrap: wrap;
+             }
+         }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .differentials{
+         .skills{
+             p{
+                flex-direction: column;
+             }
+         }
+    }
+}

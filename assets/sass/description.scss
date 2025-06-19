@@ -1,0 +1,14 @@
+@use 'variable';
+
+.description{
+    .description-text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .description-img{
+        img{
+            width: 100%;
+        }
+    }
+}

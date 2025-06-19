@@ -1,0 +1,158 @@
+@use 'variable';
+
+body{
+    font-family: variable.$nunito-sans;
+}
+
+.title{
+    text-align: center;
+    color: variable.$green;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px variable.$shadow;
+    margin-bottom: 1em;
+}
+
+p{
+    font-size: 1em;
+    color: variable.$black;
+}
+
+.btn{
+    background-color: variable.$orange;
+    height: 2.2em;
+    text-align: center;
+    font-size: 1.5em;
+    color: variable.$white;
+    text-shadow: 1px 1px 2px variable.$shadow;
+    box-shadow: 2px 2px 3px variable.$btn-shadow;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: variable.$btn-shadow;
+    height: 2.3em;
+    margin-bottom: 0;
+    color: variable.$white;
+}
+
+section{
+    margin-top: 2.2em;
+}
+
+.card{
+    box-shadow: 1px 1px 6px variable.$shadow;
+    padding: 1em;
+}
+
+.sec-title{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px variable.$text-shadow;
+}
+
+.sub-title{
+    text-align: center; 
+    font-size: 1.2em;
+}
+
+.btn-small{
+    width: 70%;
+    margin: auto;
+}
+
+.car-blue{
+    background-color: variable.$blue;   
+}
+
+.car-pink{
+    background-color: variable.$pink;
+}
+
+.car-green{
+    background-color: variable.$green;
+}
+
+.btn-lg{
+    margin-top: 1.8em;
+    text-align: center;
+    a{
+        width: 50%;
+    }
+}
+
+.nav-link{
+    color: variable.$black;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: variable.$green;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+    .title{
+        font-size: 2.5em;
+        margin-bottom: 0.8em;
+    }
+    .btn{
+        height: 2em;
+        margin-bottom: 0.5em;
+    }
+    .sec-title{
+        font-size: 1.5em;
+    }
+    .sub-title{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .btn-small{
+        height: auto;
+        font-size: 1em;
+    }
+    .btn-lg a{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    .btn{
+        height: 2em;
+        margin-bottom: 0.5em;
+    }
+    .sec-title{
+        font-size: 1.5em;
+    }
+    .sub-title{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .btn-small{
+        height: auto;
+        font-size: 1em;
+    }
+    .btn-lg a{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title{
+        font-size: 1.8em;
+    }
+    .btn{
+        height: auto;
+        font-size: 1em;
+    }
+    .sec-title{
+        font-size: 1.3em;
+    }
+}
